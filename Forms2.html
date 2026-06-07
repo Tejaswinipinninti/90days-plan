@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>User Registration</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="text" />
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="text" />
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" />
+        <label for="em">Email</label>
+        <input type="email" id="em" name="email" />
+      </fieldset>
+      <fieldset>
+        <legend>Account Preferences</legend>
+        <label for="lan">Preffered Programming Language</label>
+        <input type="radio" id="lan" name="proglag" />Dotnet
+        <input type="radio" id="lan" name="proglag" />Java<br />
+        <label for="skil">Skills</label>
+        <input type="checkbox" id="skil" name="skills" />webdevelopment
+        <input type="checkbox" id="skil" name="skills" />Data science
+      </fieldset>
+      <fieldset>
+        <legend>Profile Picture</legend>
+        <label for="pic">Profile picture</label>
+        <input type="file" id="pic" name="picture" />
+      </fieldset>
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="info">Comments</label>
+        <textarea cols="10" rows="10" for="info" name="text"></textarea>
+      </fieldset>
+      <button>Submit</button>
+      <button>Reset</button>
+    </form>
+  </body>
+</html>

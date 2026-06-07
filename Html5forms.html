@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Travel reservation form</h1>
+    <p required>donotes mandatory</p>
+    <form>
+        <label for="fname">Full name</label>
+        <input type="text" required id="fname"placeholder="enter your name"/>
+        <label for="email">Email</label>
+        <input type="email" required id="email"placeholder="enter your email"/><br/>
+        <label for="package">Package</label>
+        <input list="packages"id="package"name="package"placeholder="enter your city">
+        <datalist id="packages">
+            <option value="goa"></option>
+            <option value="chennai"></option>
+            <option value="hyd"></option>
+        </datalist>
+        <label for="date">Arrival Date</label>
+        <input type="datetime-local" required id="date"placeholder="enter your date"/><br/>
+        <label for="nop">Number of persons</label>
+        <input type="number" id="nop" placeholder="enter how many number you want"/><br/>
+        <label for="board">What would you want to avail:</label>
+        <input type="checkbox" id="board"placeholder="enter your boarding"/>boarding
+        <input type="checkbox" id="board"placeholder="enter your boarding"/>Fooding<br/>
+        <label for="dis">Discount avail code</label>
+        <input type="number" id="dis"placeholder="enter your number"/><br/>
+        <label for="terms">Terms and conditions apply</label>
+        <input type="radio" id="terms"name="gender"/>I agree
+        <input type="radio" id="terms"name="gender"/>Dont agree<br/>
+        <label for="designation">Designation</label>
+        <input list="desig" id="designation"placeholder="enter your designation"/>
+        <datalist id="desig">
+            <option value="employee"></option>
+            <option value="hr"></option>
+            <option value="manager"></option>
+        </datalist><br/>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
